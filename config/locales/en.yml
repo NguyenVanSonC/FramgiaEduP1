@@ -31,3 +31,56 @@
 
 en:
   hello: "Hello world"
+  create_user: "Account create success"
+  not_found: "Not Found This User!"
+  update: "Update Successful!"
+  static_pages:
+    home:
+      title: "Home"
+    contact:
+      title: "Contact"
+      contact_us: "Contact Us"
+      get_in: "Get In Touch"
+      contact_info: "Contact Info"
+      name: "E-Shopper Inc."
+      address: "935 W. Webster Ave New Streets Chicago, IL 60614, NY"
+      country: "Newyork USA"
+      mobile: "Mobile: +2346 17 38 93"
+      fax: "Fax: 1-714-252-0026"
+      email: "Email: info@e-shopper.com"
+      social: "Social Networking"
+  layouts:
+    header:
+      home: "Home"
+      contact: "Contact"
+      signup: "Sign Up"
+  users:
+    new:
+      title: "Sign Up"
+      button: "Create Account"
+      header: "New User Signup!"
+    form:
+      male: "Male"
+      female: "Female"
+      place_name: "Name"
+      place_email: "Email"
+      place_age: "Age"
+      place_address: "Address"
+      place_phone: "Phone Number"
+      place_password: "Your Password"
+      place_pass: "Confirmation PassWord"
+    show:
+      user_profile: "User Profile Card"
+      email: "Email: "
+      age: "Age: "
+      birthday: "BirthDay: "
+      gender: "Gender: "
+      phone: "Phone: "
+    edit:
+      title: "Edit User"
+      save: "Update"
+      header: "Update Your Profile"
+  shared:
+    error_messages:
+      messages: "The Errors Content: "
+      error: "error"
