@@ -1,0 +1,61 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 padding-right">
+        <div class="product-details">
+          <div class="col-sm-5">
+            <div class="view-product">
+              <%= image_tag(image_path("#{@product.img_url}")) %>
+            </div>
+            <div id="similar-product" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href=""><%= image_tag(image_path("product-details/similar1.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar2.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar3.jpg")) %></a>
+                </div>
+                <div class="item">
+                  <a href=""><%= image_tag(image_path("product-details/similar1.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar2.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar3.jpg")) %></a>
+                </div>
+                <div class="item">
+                  <a href=""><%= image_tag(image_path("product-details/similar1.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar2.jpg")) %></a>
+                  <a href=""><%= image_tag(image_path("product-details/similar3.jpg")) %></a>
+                </div>
+              </div>
+              <a class="left item-control" href="#similar-product" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="right item-control" href="#similar-product" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="product-information">
+              <%= image_tag(image_path("product-details/#{@product.status.downcase}.png"), class: "newarrival") %>
+              <h2><%= @product.name %></h2>
+              <p><b><%= t ".product-id" %></b><%= @product.id %></p>
+              <%= image_tag(image_path("product-details/rating.png")) %>
+              <span>
+									<span><%= @product.cost %>$</span>
+									<label><%= t ".quantity" %></label>
+									<input type="text" value="3" />
+									<button type="button" class="btn btn-fefault cart">
+										<i class="fa fa-shopping-cart"></i>
+										<%= t ".addcart" %>
+									</button>
+								</span>
+              <p><b><%= t ".status" %></b><%= @product.status %></p>
+              <p><b><%= t ".brand" %></b><%= @product.supplier_name %></p>
+              <p><b><%= t ".description" %></b><%= @product.description %></p>
+              <a href=""><%= image_tag(image_path("product-details/share.png"), class: "share img-responsive") %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

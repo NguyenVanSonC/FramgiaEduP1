@@ -8,10 +8,13 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: {minimum: Settings.minlength_pw},
     allow_nil: true
-  validates :age, presence: true, numericality: {only_integer: true, greater_than: 0,
-    less_than: 150}
+  validates :age, presence: true, numericality:
+    {only_integer: true,
+     greater_than: Settings.minimum_age,
+     less_than: Settings.maximum_age}
   VALID_PHONE_REGEX = /\d[0-9]\)*\z/
-  validates :phone, presence: true, length: {maximum: 15, minimum: 10},
+  validates :phone, presence: true, length:
+    {maximum: Settings.maximum_phone, minimum: Settings.minimum_phone},
     format: {with: VALID_PHONE_REGEX}, uniqueness: true
   validates :birthday, presence: true
 

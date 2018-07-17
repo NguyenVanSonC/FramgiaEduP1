@@ -37,11 +37,16 @@ en:
   waring_login: "Invalid email/password combination"
   success_login: "Welcome ,Shopping Fun!"
   login: "Please Login Your Account"
-  success_login: "Welcome,Shopping Fun!"
+  not-found-category: "Not found Category!"
   warning_login: "Invalid email/password combination"
+  success_product: "Create Product Successful!"
+  search_empty: "Search Empty!"
   static_pages:
     home:
       title: "Home"
+      features: "Features Items"
+      price: "Price Range"
+      category: "Category"
     contact:
       title: "Contact"
       contact_us: "Contact Us"
@@ -55,6 +60,8 @@ en:
       email: "Email: info@e-shopper.com"
       social: "Social Networking"
   layouts:
+    search:
+      search: "Search"
     header:
       home: "Home"
       contact: "Contact"
@@ -64,6 +71,26 @@ en:
       profile: "Profile"
       setting: "Settings"
       account: "Account"
+    filter_products:
+      min: "Min Price"
+      max: "Max Price"
+  admin:
+    products:
+      new:
+        title: "Add Product"
+        header: "Add Product"
+      form:
+        name: "Name"
+        color: "Color"
+        cost: "Cost"
+        description: "Description Product"
+        s: "Size S"
+        l: "Size L"
+        m: "Size M"
+        xl: "Size XL"
+        chose: "Chose Supplier"
+        img: "Url Img"
+        sum: "Quanity"
   users:
     new:
       title: "Sign Up"
@@ -102,3 +129,14 @@ en:
       submit: "Login"
       sigup: "New user?"
       sigup_path: "Sign Up Now!"
+  products:
+    product:
+      addcart: "Add to cart"
+      seemore: "See Product"
+    show:
+      addcart: "Add to cart"
+      product-id: "Product ID: "
+      brand: "Brand: "
+      status: "Condition: "
+      quantity: "Quantity: "
+      description: "Description"

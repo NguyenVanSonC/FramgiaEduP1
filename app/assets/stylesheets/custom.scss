@@ -1,3 +1,5 @@
+@import "variable_color";
+
 .container_radio {
   height: 100px;
   position: relative;
@@ -54,7 +56,7 @@
       display: inline-block;
       padding: 8px;
       color: white;
-      background-color: #000;
+      background-color: $black;
       text-align: center;
       cursor: pointer;
       width: 100%;
@@ -63,5 +65,25 @@
     button:hover {
       opacity: 0.7;
     }
+  }
+}
+.submit-search{
+  border-radius: 7px;
+  background: $white-light;
+  padding: 5px 10px;
+  i {
+    color: $gray;
+  }
+}
+#range-price {
+  input {
+    background-color: $white-light;
+    color: $gray;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
   }
 }

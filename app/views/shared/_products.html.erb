@@ -1,0 +1,4 @@
+<% if @products.any? %>
+  <%= render @products %>
+  <%= will_paginate @products %>
+<% end %>
