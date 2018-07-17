@@ -8,3 +8,7 @@ sent_at: 2
 maxcontent: 140
 picturesize: 5
 sizeavatar3: 30
+minimum_age: 0
+maximum_age: 150
+minimum_phone: 10
+maximum_phone: 15
