@@ -1,0 +1,15 @@
+<% provide :title, t(".title") %>
+<div id="contact-page" class="container">
+  <div class="bg">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="contact-form">
+          <h2 class="title text-center"><%= t ".header" %></h2>
+          <div class="status alert alert-success" style="display: none"></div>
+            <%= render "form" %>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "search_products/index"
   root "static_pages#home"
   get "/help", to: "static_pages#help"
   get "/contact", to: "static_pages#contact"
@@ -8,4 +9,13 @@ Rails.application.routes.draw do
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
   resources :users
+  resources :products
+  resources :products, only: %i(show) do
+    resources :comments
+  end
+  resources :categories
+  resources :comments
+  namespace :admin do
+    resources :products
+  end
 end

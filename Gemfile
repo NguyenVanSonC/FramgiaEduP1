@@ -24,8 +24,8 @@ gem "sass-rails", "~> 5.0"
 gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "validates_timeliness", "~> 4.0", ">= 4.0.2"
 gem "will_paginate", "3.1.6"
-gem 'validates_timeliness', '~> 4.0', '>= 4.0.2'
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

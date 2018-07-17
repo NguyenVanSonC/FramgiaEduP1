@@ -1,0 +1,48 @@
+<%= form_for [:admin, @product] do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="form-group col-md-6">
+    <%= f.text_field :name, placeholder: t(".name"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.text_field :color, placeholder: t(".color"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.text_field :cost, placeholder: t(".cost"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-12">
+    <%= f.label :status %>
+    <%= f.select :status, ["New", "Sale"], {include_blank: "Select something"}, {:class => "form-control", id: "sell"} %>
+  </div>
+  <div class="form-group col-md-12">
+    <p><%= t ".chose" %></p>
+    <%= f.select :supplier_id, Supplier.all.collect { |p| [ p.name, p.id ] }, {include_blank: "Select something"}, {:class => "form-control", id: "sell"} %>
+  </div>
+  <div class="form-group col-md-12">
+    <p><%= t ".chose" %></p>
+    <%= f.select :category_id, Category.all.collect { |p| [ p.name, p.id ] }, {include_blank: "Select something"}, {:class => "form-control", id: "sell"} %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.number_field :s, placeholder: t(".s"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.number_field :m, placeholder: t(".m"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.number_field :l, placeholder: t(".l"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.number_field :xl, placeholder: t(".xl"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-12">
+    <%= f.text_field :img_url, placeholder: t(".img"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-12">
+    <%= f.text_area :description, class: "form-control", id: "message", placeholder: t(".description") %>
+  </div>
+  <div class="form-group col-md-6">
+    <%= f.number_field :quanity, placeholder: t(".sum"), class: "form-control" %>
+  </div>
+  <div class="form-group col-md-12">
+    <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+  </div>
+<% end %>
