@@ -184,8 +184,6 @@ a#scrollUp {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    padding: 0;
-    padding-right: 0;
     margin-top: 10px;
     i {
       margin-right: 3px;
@@ -242,7 +240,7 @@ a#scrollUp {
   outline: medium none;
   padding-left: 10px;
   width: 155px;
-  background-image: url(../images/home/searchicon.png);
+  background-image: url(home/searchicon.png);
   background-repeat: no-repeat;
   background-position: 130px;
 }
@@ -1342,8 +1340,6 @@ h2.title {
   overflow: hidden;
 }
 
-.login-form, .signup-form {}
-
 .signup-form {
   align-items: center;
   padding-right: 300px;
@@ -1358,19 +1354,55 @@ h2.title {
   margin-bottom: 30px;
 }
 
-.login-form form input, .signup-form form input {
-  background: #F0F0E9;
-  border: medium none;
-  color: #696763;
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  height: 40px;
-  margin-bottom: 10px;
-  outline: medium none;
-  padding-left: 10px;
-  width: 100%;
+
+
+
+.login-form form, .signup-form form {
+  input {
+    background: #F0F0E9;
+    border: medium none;
+    color: #696763;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 7px;
+  }
+  .button_login {
+    background: #FE980F;
+    border: medium none;
+    border-radius: 10px;
+    width: 100px;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-weight: bold;
+    &:hover{
+      background: #B2B2B2;
+    }
+  }
+  .submit_signup {
+    background: #FE980F;
+    border: medium none;
+    border-radius: 10px;
+    width: 200px;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-left: 180px;
+    font-weight: bold;
+    &:hover{
+      background: #B2B2B2;
+    }
+  }
 }
 
 .login-form form {
@@ -1383,27 +1415,6 @@ h2.title {
       margin-right: 5px;
     }
   }
-  button {
-    margin-top: 23px;
-    background: #FE980F;
-    border: medium none;
-    border-radius: 10px;
-    color: #FFFFFF;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    padding: 6px 25px;
-  }
-}
-
-.signup-form form button {
-  background: #FE980F;
-  border: medium none;
-  border-radius: 10px;
-  color: #FFFFFF;
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  padding: 6px 25px;
-  width: 50px;
 }
 
 .login-form label input {
@@ -1415,18 +1426,6 @@ h2.title {
   padding-left: 0;
 }
 
-.or {
-  background: #FE980F;
-  border-radius: 40px;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 75px;
-  text-align: center;
-  width: 50px;
-}
 
 /*************************
 *******Cart CSS******

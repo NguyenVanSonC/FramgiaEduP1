@@ -34,6 +34,11 @@ en:
   create_user: "Account create success"
   not_found: "Not Found This User!"
   update: "Update Successful!"
+  waring_login: "Invalid email/password combination"
+  success_login: "Welcome ,Shopping Fun!"
+  login: "Please Login Your Account"
+  success_login: "Welcome,Shopping Fun!"
+  warning_login: "Invalid email/password combination"
   static_pages:
     home:
       title: "Home"
@@ -54,6 +59,11 @@ en:
       home: "Home"
       contact: "Contact"
       signup: "Sign Up"
+      login: "Login"
+      logout: "Logout"
+      profile: "Profile"
+      setting: "Settings"
+      account: "Account"
   users:
     new:
       title: "Sign Up"
@@ -84,3 +94,11 @@ en:
     error_messages:
       messages: "The Errors Content: "
       error: "error"
+  sessions:
+    new:
+      title: "Login"
+      login: "Login to your account"
+      remember: "Remember me on this computer"
+      submit: "Login"
+      sigup: "New user?"
+      sigup_path: "Sign Up Now!"
