@@ -6,11 +6,9 @@ class ApplicationController < ActionController::Base
     render "layouts/404" unless object
   end
 
-  private
-
   def logged_in_user
     return if logged_in?
     flash[:danger] = t "login"
-    redirect_to login_url
+    redirect_to login_path
   end
 end

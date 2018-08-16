@@ -1,1 +1,5 @@
-$('#show-products').prepend('<%= j render @comment %>');
+if (<%= @comment.reply_to.nil? %>) {
+  $('#show-products').prepend('<%= j render @comment %>');
+}else{
+  $('#reply-<%= @comment.reply_to %>').append('<%= j render partial: "comments/sub_comments", locals: {comment: @comment} %>');
+}

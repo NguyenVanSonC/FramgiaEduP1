@@ -6,5 +6,6 @@ class Comment < ApplicationRecord
 
   scope :order_by_create, ->{order "comments.create_at DESC"}
   validates :content, presence: true, length: {maximum: Settings.maxcomment}
+
   delegate :name, to: :user, prefix: :user
 end

@@ -135,8 +135,15 @@ en:
       delete: "Delete"
       sure: "Are You Sure?"
       edit: "Edit"
+      comments: "Reply comments"
+      say: "Says : "
     form:
       submit: "Submit Comment"
+    sub_comments:
+      delete: "Delete"
+      sure: "Are You Sure?"
+      edit: "Edit"
+      say: "Says : "
   sessions:
     new:
       title: "Login"
