@@ -18,6 +18,8 @@ class ProductsController < ApplicationController
       @products = Product.by_category params[:cate_id]
     when params[:cost_min] && params[:cost_max]
       @products = Product.min_max_cost params[:cost_min], params[:cost_max]
+    when params[:alphabet]
+      @products = Product.by_alphabet
     end
   end
 end

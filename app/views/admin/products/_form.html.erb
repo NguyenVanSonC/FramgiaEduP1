@@ -34,14 +34,14 @@
     <%= f.number_field :xl, placeholder: t(".xl"), class: "form-control" %>
   </div>
   <div class="form-group col-md-12">
-    <%= f.text_field :img_url, placeholder: t(".img"), class: "form-control" %>
-  </div>
-  <div class="form-group col-md-12">
     <%= f.text_area :description, class: "form-control", id: "message", placeholder: t(".description") %>
   </div>
   <div class="form-group col-md-6">
     <%= f.number_field :quanity, placeholder: t(".sum"), class: "form-control" %>
   </div>
+  <span class="picture">
+    <%= f.file_field :img_url %>
+  </span>
   <div class="form-group col-md-12">
     <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
   </div>

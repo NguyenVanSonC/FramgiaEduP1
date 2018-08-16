@@ -86,4 +86,14 @@
     border-radius: 5px;
     text-align: center;
   }
+  a {
+    background-color: $gray;
+    color: $white-light;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    &:hover {
+      background-color: $organ;
+    }
+  }
 }

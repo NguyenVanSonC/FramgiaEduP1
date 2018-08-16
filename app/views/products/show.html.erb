@@ -5,7 +5,7 @@
         <div class="product-details">
           <div class="col-sm-5">
             <div class="view-product">
-              <%= image_tag(image_path("#{@product.img_url}")) %>
+              <%= image_tag @product.img_url.url if @product.img_url? %>
             </div>
             <div id="similar-product" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">

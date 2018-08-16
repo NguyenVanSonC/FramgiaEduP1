@@ -41,6 +41,7 @@ en:
   warning_login: "Invalid email/password combination"
   success_product: "Create Product Successful!"
   search_empty: "Search Empty!"
+  shouldbe: "should be less than 5MB"
   static_pages:
     home:
       title: "Home"
@@ -74,6 +75,8 @@ en:
     filter_products:
       min: "Min Price"
       max: "Max Price"
+    filter_alphabet:
+      filter: "By Alphabet"
   admin:
     products:
       new:

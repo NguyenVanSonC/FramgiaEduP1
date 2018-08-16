@@ -1,5 +1,4 @@
 class Admin::ProductsController < ApplicationController
-  layout "admin/admin"
   def new
     @product = Product.new
   end

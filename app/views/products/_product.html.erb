@@ -2,7 +2,7 @@
   <div class="product-image-wrapper">
     <div class="single-products">
       <div class="productinfo text-center">
-        <%= image_tag(image_path("#{product.img_url}")) %>
+        <%= image_tag product.img_url.url if product.img_url? %>
         <h2>$<%= product.cost %></h2>
         <p><%= product.name %></p>
         <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i><%= t ".addcart" %></a>
